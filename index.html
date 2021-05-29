@@ -14,6 +14,7 @@
     
     <script src="https://prophone.herokuapp.com/staticfiles/landing_page_gen/render.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/4f07488cb7.js" crossorigin="anonymous"></script>
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.2/tailwind.min.css">
     
     <meta content="https://landing-page-app-hero-images.s3.amazonaws.com/media/ace.jpg" property="og:image">
@@ -27,7 +28,7 @@
     
     
 
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    
 
       <title>Ace Painting - Exceptional, Professional Service. We treat customers like family. </title>
 
@@ -69,7 +70,7 @@
       <a class="px-4 py-2 mt-2 text-lg  font-bold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 lg:mt-0 lg:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="#faqs">Faqs</a>
       
       
-      <a class="px-4 py-2 mt-2 text-lg  font-bold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 lg:mt-0 lg:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="#find-us">Find Us</a>
+      <a class="px-4 py-2 mt-2 text-lg  font-bold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 lg:mt-0 lg:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="#find-us">Service Areas</a>
       
       
          <div class = "px-4 py-2 lg:pb-3 mt-2 text-xl font-bold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 lg:mt-0 lg:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"x-data="{open: false}">
@@ -244,6 +245,7 @@
                                  
                            
                   
+
                </div>
             
             
@@ -357,96 +359,142 @@
         <div class="container relative flex flex-col justify-between h-full max-w-6xl px-10 mx-auto xl:px-0">
                 <h1 class="mb-3 text-3xl font-extrabold leading-none sm:text-4xl lg:text-7xl tracking-wide  text-center">Our Best Work</h1>
                 <h2 class="my-3 mb-10 text-xl font-medium text-gray-500 text-center">See why our customers love us</h2>
-                <div class="flex flex-wrap md:mx-4 md:mb-8 md:flex-row">
+                <div class="flex flex-wrap md:mx-4 md:mb-8 md:flex-row" x-data="{ open:false }" @keydown.escape= "open = false">
+
                 
                     
                                 
-                        <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8"><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/KQNJO82C2ZL2RGXLPGBPXOPVTBY11VKTY2SAYOCA.jpeg"  alt = "Photo number 1 of Ace Painting&#x27;s best work performing a null job"   loading="lazy" ></div>
-                    
-                
-                    
-                                
-                        <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8"><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/6RAK7KDLMB823G29OV4I6ANQIZSTY4AREPKU17HP.jpeg"  alt = "Photo number 2 of Ace Painting&#x27;s best work performing a null job"   loading="lazy" ></div>
+                        <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8" @click="open = true" ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/6RAK7KDLMB823G29OV4I6ANQIZSTY4AREPKU17HP.jpeg"  alt = "Photo number 1 of Ace Painting&#x27;s best work performing a null job"   loading="lazy" ></div>
                     
                 
                     
                                 
-                        <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8"><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/H44Z6KANXXFFJK9LHYXLJXVU5W8X0I9HWLQ337C1.jpeg"  alt = "Photo number 3 of Ace Painting&#x27;s best work performing a null job"   loading="lazy" ></div>
+                        <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8" @click="open = true" ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/H44Z6KANXXFFJK9LHYXLJXVU5W8X0I9HWLQ337C1.jpeg"  alt = "Photo number 2 of Ace Painting&#x27;s best work performing a null job"   loading="lazy" ></div>
                     
                 
                     
                                 
-                        <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8"><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/8O9K26OZ1JPX1JTAPY7EEV988JA5DY0KE5GAGV4K.jpeg"  alt = "Photo number 4 of Ace Painting&#x27;s best work performing a null job"   loading="lazy" ></div>
+                        <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8" @click="open = true" ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/KQNJO82C2ZL2RGXLPGBPXOPVTBY11VKTY2SAYOCA.jpeg"  alt = "Photo number 3 of Ace Painting&#x27;s best work performing a null job"   loading="lazy" ></div>
                     
                 
                     
                                 
-                        <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8"><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/KQ8DGXVL225G1H3PIKSAIX0I30SU34CSLAFORHNL.jpeg"  alt = "Photo number 5 of Ace Painting&#x27;s best work performing a null job"   loading="lazy" ></div>
+                        <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8" @click="open = true" ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/E2H1XQMCKAP1XQ9ECX3TV6EAKG6TVQZ96HKWAFOV.jpeg"  alt = "Photo number 4 of Ace Painting&#x27;s best work performing a null job"   loading="lazy" ></div>
                     
                 
                     
                                 
-                        <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8"><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/QHUUEJGPBR3N2CBIWETEVFUQORMCI8HLSO3TAJ0Q.jpeg"  alt = "Photo number 6 of Ace Painting&#x27;s best work performing a null job"   loading="lazy" ></div>
+                        <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8" @click="open = true" ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/ALL2Y75WIUL4T6HAYMVD7KTIVK5IBSCL9AZXUMEX.jpeg"  alt = "Photo number 5 of Ace Painting&#x27;s best work performing a null job"   loading="lazy" ></div>
                     
                 
                     
                                 
-                        <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8"><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/MPCK4AOKVWB3BGBX8TCN4A49H8R9VHLCUEQBD1FV.jpeg"  alt = "Photo number 7 of Ace Painting&#x27;s best work performing a null job"   loading="lazy" ></div>
+                        <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8" @click="open = true" ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/EGG60BOGPCLYM5G01LOODM53ZFQIECCLJ6SD3B02.jpeg"  alt = "Photo number 6 of Ace Painting&#x27;s best work performing a null job"   loading="lazy" ></div>
                     
                 
                     
                                 
-                        <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8"><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/M56Y3DGS9Y5DV8GBCFE8Q7VECL367GV7JVSGDCCZ.jpeg"  alt = "Photo number 8 of Ace Painting&#x27;s best work performing a null job"   loading="lazy" ></div>
+                        <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8" @click="open = true" ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/PV9ZIDV1A5U015CCN7AK214DFJVUTOHXB1Q0N3FY.jpeg"  alt = "Photo number 7 of Ace Painting&#x27;s best work performing a null job"   loading="lazy" ></div>
                     
                 
                     
                                 
-                        <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8"><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/CLHBWVEIHW4PKFTKLWD1TGNKRA2TTT3IXNE97PEL.jpeg"  alt = "Photo number 9 of Ace Painting&#x27;s best work performing a null job"   loading="lazy" ></div>
+                        <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8" @click="open = true" ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/PJ275GJGWUQZICVWNX3Z6IEH9R6YE0DRFFPETEAY.jpeg"  alt = "Photo number 8 of Ace Painting&#x27;s best work performing a null job"   loading="lazy" ></div>
                     
                 
                     
                                 
-                        <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8"><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/WIE5UAX7U9OO8GDSFBZTYNICAQNHOX74Y5YYXHXF.jpeg"  alt = "Photo number 10 of Ace Painting&#x27;s best work performing a null job"   loading="lazy" ></div>
+                        <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8" @click="open = true" ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/YSZ21BP6GDH1BFKLHUKDMLJHCNJ7ONV3PJGM2B7O.jpeg"  alt = "Photo number 9 of Ace Painting&#x27;s best work performing a null job"   loading="lazy" ></div>
                     
                 
                     
                                 
-                        <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8"><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/9CN4PLETBWKW93WVM6X3NVFHTRE2E6QZOVM66XWW.jpeg"  alt = "Photo number 11 of Ace Painting&#x27;s best work performing a null job"   loading="lazy" ></div>
+                        <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8" @click="open = true" ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/NWXQDUZXT2I3HWXZDAZIPNP3QAZ2WES1RVFJC9O7.jpeg"  alt = "Photo number 10 of Ace Painting&#x27;s best work performing a null job"   loading="lazy" ></div>
                     
                 
                     
                                 
-                        <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8"><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/ace11.jpg"  alt = "Photo number 12 of Ace Painting&#x27;s best work performing a null job"   loading="lazy" ></div>
+                        <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8" @click="open = true" ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/NSYJ1F4XGE3O1A2DZ3OP01727Q170P4LHOZ8R5HR.jpeg"  alt = "Photo number 11 of Ace Painting&#x27;s best work performing a null job"   loading="lazy" ></div>
                     
                 
                     
                                 
-                        <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8"><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/ace12.jpg"  alt = "Photo number 13 of Ace Painting&#x27;s best work performing a null job"   loading="lazy" ></div>
+                        <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8" @click="open = true" ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/9N56T2MK4E02UJTP91OM7PJGSI4TLL20O07K9MVD.jpeg"  alt = "Photo number 12 of Ace Painting&#x27;s best work performing a null job"   loading="lazy" ></div>
                     
                 
                     
                                 
-                        <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8"><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/ace13.jpg"  alt = "Photo number 14 of Ace Painting&#x27;s best work performing a null job"   loading="lazy" ></div>
+                        <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8" @click="open = true" ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/8O9K26OZ1JPX1JTAPY7EEV988JA5DY0KE5GAGV4K.jpeg"  alt = "Photo number 13 of Ace Painting&#x27;s best work performing a null job"   loading="lazy" ></div>
                     
                 
                     
                                 
-                        <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8"><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/ace14.jpg"  alt = "Photo number 15 of Ace Painting&#x27;s best work performing a null job"   loading="lazy" ></div>
+                        <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8" @click="open = true" ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/KQ8DGXVL225G1H3PIKSAIX0I30SU34CSLAFORHNL.jpeg"  alt = "Photo number 14 of Ace Painting&#x27;s best work performing a null job"   loading="lazy" ></div>
                     
                 
                     
                                 
-                        <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8"><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/F9GSS31KDCHPP7M0G72X2TYWZVAV13218UFTIWFK.jpeg"  alt = "Photo number 16 of Ace Painting&#x27;s best work performing a null job"   loading="lazy" ></div>
+                        <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8" @click="open = true" ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/QHUUEJGPBR3N2CBIWETEVFUQORMCI8HLSO3TAJ0Q.jpeg"  alt = "Photo number 15 of Ace Painting&#x27;s best work performing a null job"   loading="lazy" ></div>
                     
                 
                     
                                 
-                        <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8"><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/PHYH20G2AFX06MX2MBK09QC3QPCS0CDHVAPSBBM8.jpeg"  alt = "Photo number 17 of Ace Painting&#x27;s best work performing a null job"   loading="lazy" ></div>
+                        <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8" @click="open = true" ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/MPCK4AOKVWB3BGBX8TCN4A49H8R9VHLCUEQBD1FV.jpeg"  alt = "Photo number 16 of Ace Painting&#x27;s best work performing a null job"   loading="lazy" ></div>
                     
                 
                     
                                 
-                        <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8"><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/XAFNU279BISGSFX3PCBRC64X06EDSQ5X219DG3AH.jpeg"  alt = "Photo number 18 of Ace Painting&#x27;s best work performing a null job"   loading="lazy" ></div>
+                        <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8" @click="open = true" ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/M56Y3DGS9Y5DV8GBCFE8Q7VECL367GV7JVSGDCCZ.jpeg"  alt = "Photo number 17 of Ace Painting&#x27;s best work performing a null job"   loading="lazy" ></div>
+                    
+                
+                    
+                                
+                        <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8" @click="open = true" ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/CLHBWVEIHW4PKFTKLWD1TGNKRA2TTT3IXNE97PEL.jpeg"  alt = "Photo number 18 of Ace Painting&#x27;s best work performing a null job"   loading="lazy" ></div>
+                    
+                
+                    
+                                
+                        <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8" @click="open = true" ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/WIE5UAX7U9OO8GDSFBZTYNICAQNHOX74Y5YYXHXF.jpeg"  alt = "Photo number 19 of Ace Painting&#x27;s best work performing a null job"   loading="lazy" ></div>
+                    
+                
+                    
+                                
+                        <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8" @click="open = true" ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/9CN4PLETBWKW93WVM6X3NVFHTRE2E6QZOVM66XWW.jpeg"  alt = "Photo number 20 of Ace Painting&#x27;s best work performing a null job"   loading="lazy" ></div>
+                    
+                
+                    
+                                
+                        <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8" @click="open = true" ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/ace11.jpg"  alt = "Photo number 21 of Ace Painting&#x27;s best work performing a null job"   loading="lazy" ></div>
+                    
+                
+                    
+                                
+                        <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8" @click="open = true" ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/ace12.jpg"  alt = "Photo number 22 of Ace Painting&#x27;s best work performing a null job"   loading="lazy" ></div>
+                    
+                
+                    
+                                
+                        <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8" @click="open = true" ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/ace13.jpg"  alt = "Photo number 23 of Ace Painting&#x27;s best work performing a null job"   loading="lazy" ></div>
+                    
+                
+                    
+                                
+                        <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8" @click="open = true" ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/ace14.jpg"  alt = "Photo number 24 of Ace Painting&#x27;s best work performing a null job"   loading="lazy" ></div>
+                    
+                
+                    
+                                
+                        <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8" @click="open = true" ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/F9GSS31KDCHPP7M0G72X2TYWZVAV13218UFTIWFK.jpeg"  alt = "Photo number 25 of Ace Painting&#x27;s best work performing a null job"   loading="lazy" ></div>
+                    
+                
+                    
+                                
+                        <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8" @click="open = true" ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/PHYH20G2AFX06MX2MBK09QC3QPCS0CDHVAPSBBM8.jpeg"  alt = "Photo number 26 of Ace Painting&#x27;s best work performing a null job"   loading="lazy" ></div>
+                    
+                
+                    
+                                
+                        <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8" @click="open = true" ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/XAFNU279BISGSFX3PCBRC64X06EDSQ5X219DG3AH.jpeg"  alt = "Photo number 27 of Ace Painting&#x27;s best work performing a null job"   loading="lazy" ></div>
                     
                  
                 </div>     
@@ -472,6 +520,35 @@
                 
 
                 <div class="items-start justify-start w-full mt-12 mb-4 lg:flex lg:flex-wrap">
+
+                    
+            
+                    <div class="flex flex-col items-center lg:items-start justify-center w-full h-auto mb-12 lg:w-1/2">
+                    <div class="flex items-center lg:items-start ">
+                        
+                        <div class="flex flex-col justify-start items-center lg:items-start ">
+                            <h3 class="font-bold  text-gray-200  ">Robert Curry</h3>
+                            <h3 class=" text-gray-200 ">Homeowner  , Exterior Painting  </h3>
+                            <div class="flex flex-row items-start ">
+                                
+                                
+                                <span class = " text-white "> <i class="fas fa-star"> </i> </span>
+                                
+                                <span class = " text-white "> <i class="fas fa-star"> </i> </span>
+                                
+                                <span class = " text-white "> <i class="fas fa-star"> </i> </span>
+                                
+                                <span class = " text-white "> <i class="fas fa-star"> </i> </span>
+                                
+                                <span class = " text-white "> <i class="fas fa-star"> </i> </span>
+                                
+                                
+                            </div>
+                            <blockquote class="mt-8 lg:pr-5 font-bold text-xl text-center lg:text-left   text-white ">"Top notch!"</blockquote>                           
+                        </div>
+                    </div>
+                    
+                    </div>
 
                     
             
@@ -561,35 +638,6 @@
                     </div>
 
                     
-            
-                    <div class="flex flex-col items-center lg:items-start justify-center w-full h-auto mb-12 lg:w-1/2">
-                    <div class="flex items-center lg:items-start ">
-                        
-                        <div class="flex flex-col justify-start items-center lg:items-start ">
-                            <h3 class="font-bold  text-gray-200  ">Robert Curry</h3>
-                            <h3 class=" text-gray-200 ">Homeowner  , Exterior Painting  </h3>
-                            <div class="flex flex-row items-start ">
-                                
-                                
-                                <span class = " text-white "> <i class="fas fa-star"> </i> </span>
-                                
-                                <span class = " text-white "> <i class="fas fa-star"> </i> </span>
-                                
-                                <span class = " text-white "> <i class="fas fa-star"> </i> </span>
-                                
-                                <span class = " text-white "> <i class="fas fa-star"> </i> </span>
-                                
-                                <span class = " text-white "> <i class="fas fa-star"> </i> </span>
-                                
-                                
-                            </div>
-                            <blockquote class="mt-8 lg:pr-5 font-bold text-xl text-center lg:text-left   text-white ">"Top notch!"</blockquote>                           
-                        </div>
-                    </div>
-                    
-                    </div>
-
-                    
                 </div>  
 
                              
@@ -604,8 +652,8 @@
 <section id= "faqs" class="py-16   bg-white text-gray-900  md:py-20 lg:py-24">
     <div class="max-w-5xl px-12 mx-auto xl:px-0">
 
-        <h1 class="text-3xl  font-bold md:text-4xl lg:text-6xl xl:text-7xl text-center lg:text-left">FAQs</h1>
-        <h2 class="mt-4 text-xl font-thin  lg:text-2xl text-center lg:text-left">Your questions answered</h2>
+        <h1 class="mb-5 text-3xl  mx-auto text-center font-extrabold leading-none sm:text-4xl lg:text-7xl">Faqs</h1>
+         <h2 class="my-3 mb-10  text-xl font-medium text-gray-500 text-center">Your questions answered</h2>
 
         <div class="relative mt-12 space-y-3">
 
@@ -640,7 +688,7 @@
 <section id="find-us" class="py-16   bg-white text-gray-900  md:py-20 lg:py-20">
     <div class="max-w-5xl px-12 mx-auto text-center xl:px-0">
 
-    <h1 class="mb-5 text-3xl  mx-auto text-center font-extrabold leading-none sm:text-4xl lg:text-7xl"> Our Service Areas </h1>
+    <h1 class="mb-5 text-3xl  mx-auto text-center font-extrabold leading-none sm:text-4xl lg:text-7xl"> Service Areas </h1>
     <h2 class="my-3 mb-10  text-xl font-medium text-gray-500 text-center"> Proudly Serving   Sheboygan & Surrounding Areas   </h2>
     <iframe
             width="100%"
@@ -675,7 +723,7 @@
                 
                 
                 
-                <li> <a href="#find-us" class=" px-2 md:px-4 text-gray-500 hover:text-white">Find Us</a></li>
+                <li> <a href="#find-us" class=" px-2 md:px-4 text-gray-500 hover:text-white">Service Areas</a></li>
                 
             </ul>
         </div>
